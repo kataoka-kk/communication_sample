@@ -13,7 +13,11 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Communication Sample',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        useMaterial3: true,
+        appBarTheme: const AppBarTheme(
+          backgroundColor: Colors.green,
+        ),
+        primarySwatch: Colors.green,
       ),
       routes: PageConst.pages,
     );
